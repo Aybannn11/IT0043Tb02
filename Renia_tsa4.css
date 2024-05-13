@@ -1,0 +1,46 @@
+body {
+    font-family: 'Trebuchet MS';
+    background-image: url("Reniabg.jpg");
+    margin: 0 200px;
+    text-align: center;
+}
+
+.img {
+    width: 9vw;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(240, 240, 236, 0.829);
+    font-size: 7em;
+}
+
+.date {
+    font-size: 5em;
+}
+
+.message {
+    font-size: 4em;
+    color: rgb(241, 241, 233);
+}
+
+.message p {
+    margin-bottom: 20px;
+}
+
+.message b {
+    font-weight: bold;
+}
+
+.message i {
+    font-style: italic;
+    display: block;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
