@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renia_Labro_tsa8</title>
+  <link rel="stylesheet" href="Renia_Labro_tsa8.css">
+</head>
+<body>
+  <div class="container">
+    <div class="controls">
+      <button onclick="resetPosition()">Reset Position</button>
+      <label>
+        Gap:
+        <input type="number" id="gap" value="0" oninput="updateGap()">
+      </label>
+      <div>
+        Flex Direction:
+        <button onclick="setFlexDirection('row')">Row</button>
+        <button onclick="setFlexDirection('column')">Column</button>
+      </div>
+      <div>
+        Justify Content:
+        <button onclick="setJustifyContent('flex-start')">Start</button>
+        <button onclick="setJustifyContent('center')">Center</button>
+        <button onclick="setJustifyContent('flex-end')">End</button>
+        <button onclick="setJustifyContent('space-around')">Space Around</button>
+        <button onclick="setJustifyContent('space-between')">Space Between</button>
+        <button onclick="setJustifyContent('space-evenly')">Space Evenly</button>
+      </div>
+      <div>
+        Align Items:
+        <button onclick="setAlignItems('flex-start')">Start</button>
+        <button onclick="setAlignItems('center')">Center</button>
+        <button onclick="setAlignItems('flex-end')">End</button>
+      </div>
+      <div>
+        Flex Grow:
+        <label>Box 1: <input type="number" id="grow1" value="1" oninput="updateFlexGrow(1)"></label>
+        <label>Box 2: <input type="number" id="grow2" value="1" oninput="updateFlexGrow(2)"></label>
+        <label>Box 3: <input type="number" id="grow3" value="1" oninput="updateFlexGrow(3)"></label>
+      </div>
+    </div>
+    <div class="flex-container" id="flexContainer">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+    </div>
+  </div>
+  <script src="Renia_Labro_tsa8.js"></script>
+</body>
+</html>
