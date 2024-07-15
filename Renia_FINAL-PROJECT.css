@@ -77,9 +77,7 @@ h2 {
 }
 
 #home.content-section {
-    background-image: url('bg.jpg'); 
-    background-size: cover;
-    background-position: center;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 3rem;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -104,97 +102,70 @@ h2 {
 .home-image:hover {
     transform: scale(1.05);
 }
-#about {
-    background: linear-gradient(to bottom right, #f9f9f9);
-    background-image: url('image.jpg'); 
-    background-size: cover;
-    background-position: center;
-    padding: 3rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    transition: transform 0.3s ease;
-    color: #333;
-    position: relative;
-    overflow: hidden;
-}
-
-#about::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); 
-    z-index: 0;
-}
-
-#about:hover {
-    transform: translateY(-10px);
-}
-
-#about h2 {
-    border-bottom: 3px solid #4CAF50;
-    padding-bottom: 0.75rem;
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #fff; 
-    position: relative;
-    z-index: 1;
+.content-section {
+    padding: 40px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-content {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-.about-content p {
-    font-size: 1.2rem;
-    color: #fff; 
-    line-height: 1.6;
-    margin: 1.5rem 0;
-    max-width: 800px;
+    gap: 20px;
 }
 
 .about-image {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    margin-bottom: 1.5rem;
-}
-.add-image {
-    width: 100%; 
-    max-width: 682px; 
-    height: auto; 
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-    .add-image {
-        max-width: 100%; 
-        height: auto; 
-    }
+.skills-section {
+    margin-top: 40px;
 }
 
+.skills-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill span {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 20px;
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+}
+
+.percentage {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
 
 .about-image:hover {
     transform: scale(1.05);
 }
 
 #work {
-    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 80px 0;
     text-align: center;
 }
@@ -244,10 +215,8 @@ h2 {
     }
 }
 
-
-
 #contact {
-    background-color: #FFFD7B; 
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 50px 20px; 
     text-align: center; 
 }
@@ -315,7 +284,7 @@ ul li a:hover {
 }
 
 #social {
-    background-color: #000000; 
+    background-color: #2E2E2C; 
     padding: 60px 20px; 
     text-align: center; 
     border-radius: 10px; 
